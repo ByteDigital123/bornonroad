@@ -8,6 +8,10 @@ body.open_sans {font-family:'open sans', 'HelveticaNeue', 'Helvetica Neue', 'Hel
     text-transform: uppercase;
 }
 
+input[type='submit'] {
+    width: 100%!important;
+}
+
 .iconbox a:hover {
   animation: bounce 1s;
 }
