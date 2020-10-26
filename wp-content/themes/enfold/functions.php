@@ -838,6 +838,7 @@ if( ! function_exists( 'avia_add_admin_body_class' ) )
  *  register custom functions that are not related to the framework but necessary for the theme to run
  */
 
+
 require_once( 'functions-enfold.php');
 
 
