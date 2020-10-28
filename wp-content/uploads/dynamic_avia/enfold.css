@@ -8,6 +8,25 @@ body.open_sans {font-family:'open sans', 'HelveticaNeue', 'Helvetica Neue', 'Hel
     text-transform: uppercase;
 }
 
+#footer .widget {
+    margin: 0;
+    text-align: center;
+}
+
+#top #searchsubmit { 
+    width: 40px!important;
+}
+
+#top .av-caption-style-overlay .av-masonry-entry .av-masonry-entry-title {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.modern-quote .av-special-heading-tag {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
 input[type='submit'] {
     width: 100%!important;
 }
@@ -126,7 +145,7 @@ footer#socket {
 }
 
 .html_header_top.html_header_sticky #top #wrap_all #main {
-    padding-top: 140px!important;
+    padding-top: 118px!important;
 }
 
 .mix-blend {
@@ -157,6 +176,10 @@ footer#socket {
 }
 
 @media only screen and (max-width: 767px){
+.remove-padding-bottom {
+    padding-bottom:0!important
+}
+
 
 .logo img {
     width: 150px!important;
