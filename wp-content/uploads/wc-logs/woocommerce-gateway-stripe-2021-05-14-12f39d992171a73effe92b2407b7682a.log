@@ -1,0 +1,838 @@
+2021-05-14T13:04:30+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+sources/src_1Ir0gqBns1QHW7JdNlneLMuf
+====End Log====
+
+
+2021-05-14T13:04:30+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+customers request: Array
+(
+    [email] => alexhtcaccount@hotmail.co.uk
+    [description] => Name: Alexander Etel, Guest
+    [name] => Alexander Etel
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2021-05-14T13:04:31+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+Info: Begin processing payment for order 1070 for the amount of 0.50
+====End Log====
+
+
+2021-05-14T13:04:31+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+payment_intents request: Array
+(
+    [source] => src_1Ir0gqBns1QHW7JdNlneLMuf
+    [amount] => 50
+    [currency] => gbp
+    [description] => Born On Road - Order 1070
+    [metadata] => Array
+        (
+            [customer_name] => Alexander Etel
+            [customer_email] => alexhtcaccount@hotmail.co.uk
+            [order_id] => 1070
+            [site_url] => https://clientspot.co.uk
+        )
+
+    [capture_method] => automatic
+    [payment_method_types] => Array
+        (
+            [0] => card
+        )
+
+    [customer] => cus_JTyehhUIPzTOgG
+)
+
+====End Log====
+
+
+2021-05-14T13:04:31+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+Stripe PaymentIntent pi_1Ir0gtBns1QHW7JddiHqJyGH initiated for order 1070
+====End Log====
+
+
+2021-05-14T13:04:31+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+payment_intents/pi_1Ir0gtBns1QHW7JddiHqJyGH/confirm request: Array
+(
+    [source] => src_1Ir0gqBns1QHW7JdNlneLMuf
+)
+
+====End Log====
+
+
+2021-05-14T13:04:33+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+Stripe PaymentIntent pi_1Ir0gtBns1QHW7JddiHqJyGH succeeded for order 1070
+====End Log====
+
+
+2021-05-14T13:04:33+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+Processing response: stdClass Object
+(
+    [id] => ch_1Ir0guBns1QHW7Jds0tNmESc
+    [object] => charge
+    [amount] => 50
+    [amount_captured] => 50
+    [amount_refunded] => 0
+    [application] => ca_BC3QvYOCCxiOW3Klo6zL8KlBgSHzwTKn
+    [application_fee] => 
+    [application_fee_amount] => 
+    [balance_transaction] => txn_1Ir0gvBns1QHW7JdMI9ZnwFZ
+    [billing_details] => stdClass Object
+        (
+            [address] => stdClass Object
+                (
+                    [city] => Manchester
+                    [country] => GB
+                    [line1] => 5 Pennington Gardens, Cheadle
+                    [line2] => Cheadle
+                    [postal_code] => SK82GN
+                    [state] => Cheshire
+                )
+
+            [email] => alexhtcaccount@hotmail.co.uk
+            [name] => Alexander Etel
+            [phone] => 07584245584
+        )
+
+    [calculated_statement_descriptor] => WWW.BORNONROAD.COM
+    [captured] => 1
+    [created] => 1620997472
+    [currency] => gbp
+    [customer] => cus_JTyehhUIPzTOgG
+    [description] => Born On Road - Order 1070
+    [destination] => 
+    [dispute] => 
+    [disputed] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 1
+    [metadata] => stdClass Object
+        (
+            [customer_name] => Alexander Etel
+            [customer_email] => alexhtcaccount@hotmail.co.uk
+            [order_id] => 1070
+            [site_url] => https://clientspot.co.uk
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [payment_intent] => pi_1Ir0gtBns1QHW7JddiHqJyGH
+    [payment_method] => src_1Ir0gqBns1QHW7JdNlneLMuf
+    [payment_method_details] => stdClass Object
+        (
+            [card] => stdClass Object
+                (
+                    [brand] => visa
+                    [checks] => stdClass Object
+                        (
+                            [address_line1_check] => pass
+                            [address_postal_code_check] => pass
+                            [cvc_check] => pass
+                        )
+
+                    [country] => GB
+                    [exp_month] => 7
+                    [exp_year] => 2021
+                    [fingerprint] => oQQSxKQblXwOEW80
+                    [funding] => debit
+                    [installments] => 
+                    [last4] => 5844
+                    [network] => visa
+                    [three_d_secure] => 
+                    [wallet] => 
+                )
+
+            [type] => card
+        )
+
+    [receipt_email] => 
+    [receipt_number] => 
+    [receipt_url] => https://pay.stripe.com/receipts/acct_1IqyjXBns1QHW7Jd/ch_1Ir0guBns1QHW7Jds0tNmESc/rcpt_JTyeuymAnwoApgLbqp9QlFC2LkPoT5z
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_1Ir0guBns1QHW7Jds0tNmESc/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => src_1Ir0gqBns1QHW7JdNlneLMuf
+            [object] => source
+            [amount] => 
+            [card] => stdClass Object
+                (
+                    [exp_month] => 7
+                    [exp_year] => 2021
+                    [last4] => 5844
+                    [country] => GB
+                    [brand] => Visa
+                    [address_line1_check] => pass
+                    [address_zip_check] => pass
+                    [cvc_check] => pass
+                    [funding] => debit
+                    [fingerprint] => oQQSxKQblXwOEW80
+                    [three_d_secure] => optional
+                    [name] => 
+                    [tokenization_method] => 
+                    [dynamic_last4] => 
+                )
+
+            [client_secret] => src_client_secret_fTKfyaIeTGz9kOOtAPXhrt2K
+            [created] => 1620997472
+            [currency] => 
+            [flow] => none
+            [livemode] => 1
+            [metadata] => stdClass Object
+                (
+                )
+
+            [owner] => stdClass Object
+                (
+                    [address] => stdClass Object
+                        (
+                            [city] => Manchester
+                            [country] => GB
+                            [line1] => 5 Pennington Gardens, Cheadle
+                            [line2] => Cheadle
+                            [postal_code] => SK82GN
+                            [state] => Cheshire
+                        )
+
+                    [email] => alexhtcaccount@hotmail.co.uk
+                    [name] => Alexander Etel
+                    [phone] => 07584245584
+                    [verified_address] => 
+                    [verified_email] => 
+                    [verified_name] => 
+                    [verified_phone] => 
+                )
+
+            [statement_descriptor] => 
+            [status] => consumed
+            [type] => card
+            [usage] => reusable
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [statement_descriptor_suffix] => 
+    [status] => succeeded
+    [transfer_data] => 
+    [transfer_group] => 
+)
+
+====End Log====
+
+
+2021-05-14T13:04:33+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+balance/history/txn_1Ir0gvBns1QHW7JdMI9ZnwFZ
+====End Log====
+
+
+2021-05-14T13:09:02+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+sources/src_1Ir0lEBns1QHW7JdQrW5v4bK
+====End Log====
+
+
+2021-05-14T13:09:03+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+customers request: Array
+(
+    [email] => alexhtcaccount@hotmail.co.uk
+    [description] => Name: Alexander Etel, Guest
+    [name] => Alexander Etel
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2021-05-14T13:09:03+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+Info: Begin processing payment for order 1071 for the amount of 0.50
+====End Log====
+
+
+2021-05-14T13:09:03+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+payment_intents request: Array
+(
+    [source] => src_1Ir0lEBns1QHW7JdQrW5v4bK
+    [amount] => 50
+    [currency] => gbp
+    [description] => Born On Road - Order 1071
+    [metadata] => Array
+        (
+            [customer_name] => Alexander Etel
+            [customer_email] => alexhtcaccount@hotmail.co.uk
+            [order_id] => 1071
+            [site_url] => https://clientspot.co.uk
+        )
+
+    [capture_method] => automatic
+    [payment_method_types] => Array
+        (
+            [0] => card
+        )
+
+    [customer] => cus_JTyij2mK8sdxnx
+)
+
+====End Log====
+
+
+2021-05-14T13:09:04+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+Stripe PaymentIntent pi_1Ir0lHBns1QHW7Jd1Y9SKrMf initiated for order 1071
+====End Log====
+
+
+2021-05-14T13:09:04+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+payment_intents/pi_1Ir0lHBns1QHW7Jd1Y9SKrMf/confirm request: Array
+(
+    [source] => src_1Ir0lEBns1QHW7JdQrW5v4bK
+)
+
+====End Log====
+
+
+2021-05-14T13:09:06+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+Stripe PaymentIntent pi_1Ir0lHBns1QHW7Jd1Y9SKrMf succeeded for order 1071
+====End Log====
+
+
+2021-05-14T13:09:06+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+Processing response: stdClass Object
+(
+    [id] => ch_1Ir0lIBns1QHW7Jdd9SWM9mU
+    [object] => charge
+    [amount] => 50
+    [amount_captured] => 50
+    [amount_refunded] => 0
+    [application] => ca_BC3QvYOCCxiOW3Klo6zL8KlBgSHzwTKn
+    [application_fee] => 
+    [application_fee_amount] => 
+    [balance_transaction] => txn_1Ir0lJBns1QHW7JdsZAiCZ3Q
+    [billing_details] => stdClass Object
+        (
+            [address] => stdClass Object
+                (
+                    [city] => Manchester
+                    [country] => GB
+                    [line1] => 5 Pennington Gardens, Cheadle
+                    [line2] => Cheadle
+                    [postal_code] => SK82GN
+                    [state] => Cheshire
+                )
+
+            [email] => alexhtcaccount@hotmail.co.uk
+            [name] => Alexander Etel
+            [phone] => 07584245584
+        )
+
+    [calculated_statement_descriptor] => WWW.BORNONROAD.COM
+    [captured] => 1
+    [created] => 1620997744
+    [currency] => gbp
+    [customer] => cus_JTyij2mK8sdxnx
+    [description] => Born On Road - Order 1071
+    [destination] => 
+    [dispute] => 
+    [disputed] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 1
+    [metadata] => stdClass Object
+        (
+            [customer_name] => Alexander Etel
+            [customer_email] => alexhtcaccount@hotmail.co.uk
+            [order_id] => 1071
+            [site_url] => https://clientspot.co.uk
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [payment_intent] => pi_1Ir0lHBns1QHW7Jd1Y9SKrMf
+    [payment_method] => src_1Ir0lEBns1QHW7JdQrW5v4bK
+    [payment_method_details] => stdClass Object
+        (
+            [card] => stdClass Object
+                (
+                    [brand] => visa
+                    [checks] => stdClass Object
+                        (
+                            [address_line1_check] => pass
+                            [address_postal_code_check] => pass
+                            [cvc_check] => pass
+                        )
+
+                    [country] => GB
+                    [exp_month] => 7
+                    [exp_year] => 2021
+                    [fingerprint] => oQQSxKQblXwOEW80
+                    [funding] => debit
+                    [installments] => 
+                    [last4] => 5844
+                    [network] => visa
+                    [three_d_secure] => 
+                    [wallet] => 
+                )
+
+            [type] => card
+        )
+
+    [receipt_email] => 
+    [receipt_number] => 
+    [receipt_url] => https://pay.stripe.com/receipts/acct_1IqyjXBns1QHW7Jd/ch_1Ir0lIBns1QHW7Jdd9SWM9mU/rcpt_JTyiAXqQAxY2Iqhqtv2bBwDcWRbJ31R
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_1Ir0lIBns1QHW7Jdd9SWM9mU/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => src_1Ir0lEBns1QHW7JdQrW5v4bK
+            [object] => source
+            [amount] => 
+            [card] => stdClass Object
+                (
+                    [exp_month] => 7
+                    [exp_year] => 2021
+                    [last4] => 5844
+                    [country] => GB
+                    [brand] => Visa
+                    [address_line1_check] => pass
+                    [address_zip_check] => pass
+                    [cvc_check] => pass
+                    [funding] => debit
+                    [fingerprint] => oQQSxKQblXwOEW80
+                    [three_d_secure] => optional
+                    [name] => 
+                    [tokenization_method] => 
+                    [dynamic_last4] => 
+                )
+
+            [client_secret] => src_client_secret_rz32BmClaAgYOEKUXwLYgvE6
+            [created] => 1620997745
+            [currency] => 
+            [flow] => none
+            [livemode] => 1
+            [metadata] => stdClass Object
+                (
+                )
+
+            [owner] => stdClass Object
+                (
+                    [address] => stdClass Object
+                        (
+                            [city] => Manchester
+                            [country] => GB
+                            [line1] => 5 Pennington Gardens, Cheadle
+                            [line2] => Cheadle
+                            [postal_code] => SK82GN
+                            [state] => Cheshire
+                        )
+
+                    [email] => alexhtcaccount@hotmail.co.uk
+                    [name] => Alexander Etel
+                    [phone] => 07584245584
+                    [verified_address] => 
+                    [verified_email] => 
+                    [verified_name] => 
+                    [verified_phone] => 
+                )
+
+            [statement_descriptor] => 
+            [status] => consumed
+            [type] => card
+            [usage] => reusable
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [statement_descriptor_suffix] => 
+    [status] => succeeded
+    [transfer_data] => 
+    [transfer_group] => 
+)
+
+====End Log====
+
+
+2021-05-14T13:09:06+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+balance/history/txn_1Ir0lJBns1QHW7JdsZAiCZ3Q
+====End Log====
+
+
+2021-05-14T13:25:35+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+Your domain has been verified with Apple Pay!
+====End Log====
+
+
+2021-05-14T13:26:19+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+sources/src_1Ir11yBns1QHW7Jdx1Is4TA2
+====End Log====
+
+
+2021-05-14T13:26:19+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+customers request: Array
+(
+    [email] => alex@builtbypixel.com
+    [description] => Name: Alexander Etel, Username: Kumo
+    [name] => Alexander Etel
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2021-05-14T13:26:20+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+Info: Begin processing payment for order 1072 for the amount of 0.50
+====End Log====
+
+
+2021-05-14T13:26:20+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+payment_intents request: Array
+(
+    [source] => src_1Ir11yBns1QHW7Jdx1Is4TA2
+    [amount] => 50
+    [currency] => gbp
+    [description] => Born On Road - Order 1072
+    [metadata] => Array
+        (
+            [customer_name] => Alexander Etel
+            [customer_email] => alex@etel.com
+            [order_id] => 1072
+            [site_url] => https://clientspot.co.uk
+        )
+
+    [capture_method] => automatic
+    [payment_method_types] => Array
+        (
+            [0] => card
+        )
+
+    [customer] => cus_JTyzxptUPczHsd
+)
+
+====End Log====
+
+
+2021-05-14T13:26:20+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+Stripe PaymentIntent pi_1Ir120Bns1QHW7JdNgKxGAsn initiated for order 1072
+====End Log====
+
+
+2021-05-14T13:26:20+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+payment_intents/pi_1Ir120Bns1QHW7JdNgKxGAsn/confirm request: Array
+(
+    [source] => src_1Ir11yBns1QHW7Jdx1Is4TA2
+)
+
+====End Log====
+
+
+2021-05-14T13:26:22+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+Stripe PaymentIntent pi_1Ir120Bns1QHW7JdNgKxGAsn succeeded for order 1072
+====End Log====
+
+
+2021-05-14T13:26:22+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+Processing response: stdClass Object
+(
+    [id] => ch_1Ir121Bns1QHW7JdZKKzq0bq
+    [object] => charge
+    [amount] => 50
+    [amount_captured] => 50
+    [amount_refunded] => 0
+    [application] => ca_BC3QvYOCCxiOW3Klo6zL8KlBgSHzwTKn
+    [application_fee] => 
+    [application_fee_amount] => 
+    [balance_transaction] => txn_1Ir122Bns1QHW7JduCQDGIGI
+    [billing_details] => stdClass Object
+        (
+            [address] => stdClass Object
+                (
+                    [city] => Manchester
+                    [country] => GB
+                    [line1] => 5 Pennington Gardens, Cheadle
+                    [line2] => Cheadle
+                    [postal_code] => SK82GN
+                    [state] => Cheshire
+                )
+
+            [email] => alex@etel.com
+            [name] => Alexander Etel
+            [phone] => 07584245584
+        )
+
+    [calculated_statement_descriptor] => WWW.BORNONROAD.COM
+    [captured] => 1
+    [created] => 1620998781
+    [currency] => gbp
+    [customer] => cus_JTyzxptUPczHsd
+    [description] => Born On Road - Order 1072
+    [destination] => 
+    [dispute] => 
+    [disputed] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 1
+    [metadata] => stdClass Object
+        (
+            [customer_name] => Alexander Etel
+            [customer_email] => alex@etel.com
+            [order_id] => 1072
+            [site_url] => https://clientspot.co.uk
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [payment_intent] => pi_1Ir120Bns1QHW7JdNgKxGAsn
+    [payment_method] => src_1Ir11yBns1QHW7Jdx1Is4TA2
+    [payment_method_details] => stdClass Object
+        (
+            [card] => stdClass Object
+                (
+                    [brand] => visa
+                    [checks] => stdClass Object
+                        (
+                            [address_line1_check] => pass
+                            [address_postal_code_check] => pass
+                            [cvc_check] => pass
+                        )
+
+                    [country] => GB
+                    [exp_month] => 7
+                    [exp_year] => 2021
+                    [fingerprint] => oQQSxKQblXwOEW80
+                    [funding] => debit
+                    [installments] => 
+                    [last4] => 5844
+                    [network] => visa
+                    [three_d_secure] => 
+                    [wallet] => 
+                )
+
+            [type] => card
+        )
+
+    [receipt_email] => 
+    [receipt_number] => 
+    [receipt_url] => https://pay.stripe.com/receipts/acct_1IqyjXBns1QHW7Jd/ch_1Ir121Bns1QHW7JdZKKzq0bq/rcpt_JTz0xytsFwol4Bc6abad2VDtlXeMlDX
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_1Ir121Bns1QHW7JdZKKzq0bq/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => src_1Ir11yBns1QHW7Jdx1Is4TA2
+            [object] => source
+            [amount] => 
+            [card] => stdClass Object
+                (
+                    [exp_month] => 7
+                    [exp_year] => 2021
+                    [last4] => 5844
+                    [country] => GB
+                    [brand] => Visa
+                    [address_line1_check] => pass
+                    [address_zip_check] => pass
+                    [cvc_check] => pass
+                    [funding] => debit
+                    [fingerprint] => oQQSxKQblXwOEW80
+                    [three_d_secure] => optional
+                    [name] => 
+                    [tokenization_method] => 
+                    [dynamic_last4] => 
+                )
+
+            [client_secret] => src_client_secret_XgT3W0ma4sbmZ3oeuInGAmWK
+            [created] => 1620998782
+            [currency] => 
+            [flow] => none
+            [livemode] => 1
+            [metadata] => stdClass Object
+                (
+                )
+
+            [owner] => stdClass Object
+                (
+                    [address] => stdClass Object
+                        (
+                            [city] => Manchester
+                            [country] => GB
+                            [line1] => 5 Pennington Gardens, Cheadle
+                            [line2] => Cheadle
+                            [postal_code] => SK82GN
+                            [state] => Cheshire
+                        )
+
+                    [email] => alex@etel.com
+                    [name] => Alexander Etel
+                    [phone] => 07584245584
+                    [verified_address] => 
+                    [verified_email] => 
+                    [verified_name] => 
+                    [verified_phone] => 
+                )
+
+            [statement_descriptor] => 
+            [status] => consumed
+            [type] => card
+            [usage] => reusable
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [statement_descriptor_suffix] => 
+    [status] => succeeded
+    [transfer_data] => 
+    [transfer_group] => 
+)
+
+====End Log====
+
+
+2021-05-14T13:26:22+00:00 DEBUG 
+====Stripe Version: 5.1.0====
+====Start Log====
+balance/history/txn_1Ir122Bns1QHW7JduCQDGIGI
+====End Log====
+
+

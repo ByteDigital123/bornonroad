@@ -27,3 +27,15 @@ font-family: CircularStd-Book;
 src: url(/wp-content/themes/enfold/fonts/CircularStd-Book.otf); 
 font-weight: normal; 
 }
+
+@font-face { 
+font-family: Montserrat-Medium; 
+src: url(/wp-content/themes/enfold/fonts/Montserrat-Medium.otf); 
+font-weight: normal; 
+}
+
+@font-face { 
+font-family: Poppins-Medium; 
+src: url(/wp-content/themes/enfold/fonts/Poppins-Medium.ttf); 
+font-weight: normal; 
+}
