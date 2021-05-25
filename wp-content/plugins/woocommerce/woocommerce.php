@@ -13,7 +13,7 @@
  *
  * @package WooCommerce
  */
-
+add_filter( 'woocommerce_defer_transactional_emails', '__return_true' );
 defined( 'ABSPATH' ) || exit;
 
 if ( ! defined( 'WC_PLUGIN_FILE' ) ) {
