@@ -58,6 +58,7 @@
 <html <?php language_attributes(); ?> class="<?php echo "html_{$style} ".$responsive." ".$preloader." ".$av_lightbox." ".$filterable_classes." ".$av_classes_manually ?> ">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta name="facebook-domain-verification" content="h05quqtzq01195qojvmlt24tqo9qvh" />
 <?php
 
 /*
